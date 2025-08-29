@@ -1,0 +1,10 @@
+server:
+  port: ${SERVICE.SETTINGS.PORT:10100}
+spring:
+  application:
+    name: nyxx-access-management-service
+logging:
+  level:
+    com:
+      nerosec:
+        nyxx: ${SERVICE.SETTINGS.LOGGING.LEVEL:INFO}

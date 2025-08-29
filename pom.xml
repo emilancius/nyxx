@@ -15,6 +15,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>nyxx-commons</module>
+        <module>nyxx-access-management-service</module>
     </modules>
     <properties>
         <!-- Versions: -->
@@ -28,7 +29,7 @@
         <!-- -->
         <kotlin.code.style>official</kotlin.code.style>
         <kotlin.compiler.jvmTarget>${java.version}</kotlin.compiler.jvmTarget>
-        <kotlin.compiler.languageVersion>2.1</kotlin.compiler.languageVersion>
+        <kotlin.compiler.languageVersion>2.2</kotlin.compiler.languageVersion>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
