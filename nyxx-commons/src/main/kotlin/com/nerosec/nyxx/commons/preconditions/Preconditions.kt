@@ -18,7 +18,7 @@ object Preconditions {
 
     fun requireArgumentIsEntityId(name: String, argument: String, entityType: EntityType, message: (() -> String?)? = null) =
         requireArgument(argument.isEntityId(entityType)) {
-            message?.invoke() ?: "Argument's \"$name\" value ($argument) is not an entity id for an entity of type \"${entityType.value}\""
+            message?.invoke() ?: "Argument's \"$name\" value ($argument) is not an entity id for an entity of type \"${entityType.value}\"."
         }
 
     fun requireArgumentIsInCollection(name: String, argument: Any?, collection: Collection<Any>, message: (() -> String?)? = null) =
