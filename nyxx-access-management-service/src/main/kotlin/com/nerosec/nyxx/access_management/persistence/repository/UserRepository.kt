@@ -5,4 +5,7 @@ import com.nerosec.nyxx.commons.persistence.repository.BaseRepository
 import org.springframework.stereotype.Repository
 
 @Repository
-interface UserRepository : BaseRepository<UserEntity>
+interface UserRepository : BaseRepository<UserEntity> {
+
+    fun existsByUsername(username: String): Boolean
+}
